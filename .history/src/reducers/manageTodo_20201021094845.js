@@ -7,7 +7,7 @@ export default function manageTodo(state = {
     case 'ADD_TODO':
       const todo = {
         id: uuid(),
-        text: action.payload.text
+        todo: action.payload.text
       }
 
       return { todos: state.todos.concat(todo) };
